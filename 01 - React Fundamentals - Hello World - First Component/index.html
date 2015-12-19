@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Component</title>
+  <script src="../vendor/ReactWithAddons.js"></script>
+  <script src="../vendor/ReactDOM.js"></script>
+  <script src="../vendor/browser.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- This element's contents will be replaced with your component. -->
+  </div>
+  <script type="text/babel">
+class Hello extends React.Component {
+render() {
+  return (
+    <div>
+      Hello {this.props.name}
+      </div>
+  )
+}
+}
+
+  ReactDOM.render(
+    <Hello name="World" />,
+    document.getElementById('container')
+  );
+
+  </script>
+</body>
+</html>

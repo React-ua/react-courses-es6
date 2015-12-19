@@ -1,0 +1,8 @@
+{
+  "name": "react-cours-es6",
+  "version": "1.0.0",
+  "description": "Using ES6+ features to write  React components",
+  "main": "index.js",
+  "author": "Mohamed JEBLI",
+  "license": "MIT"
+}

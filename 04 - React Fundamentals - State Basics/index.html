@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setState</title>
+    <script src="../vendor/ReactWithAddons.js"></script>
+    <script src="../vendor/ReactDOM.js"></script>
+    <script src="../vendor/browser.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- This element's contents will be replaced with your component. -->
+  </div>
+<script type="text/babel">
+class App  extends React.Component {
+  constructor(props){
+    super(props);
+    this.state ={txt:'',id:0};
+    this.updateTxt= this.updateTxt.bind(this);
+  }
+  render () {
+    return(
+                <div>
+                    <input type="text" onChange={this.updateTxt} />
+                    <h1>{this.state.txt}</h1>
+                </div>
+  )
+  }
+  updateTxt(e){
+    console.log(this);
+    this.setState({txt:e.target.value})
+  }
+}
+    ReactDOM.render(
+        <App txt="this is the txt prop" />,
+        document.getElementById("container"))
+</script>
+</body>
+</html>

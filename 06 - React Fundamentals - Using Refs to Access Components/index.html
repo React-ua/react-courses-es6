@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refs</title>
+    <script src="../vendor/ReactWithAddons.js"></script>
+    <script src="../vendor/ReactDOM.js"></script>
+    <script src="../vendor/browser.min.js"></script>
+</head>
+<body>
+<script type="text/babel">
+
+class APP extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        red:0,
+        green:0,
+        blue:0
+    };
+    this.update = this.update.bind(this);
+  }
+
+  update(){
+      this.setState({
+          red:this.refs.red.refs.range.getDOMNode().value,
+          green:this.refs.green.refs.range.getDOMNode().value,
+          blue:this.refs.blue.refs.range.getDOMNode().value
+      })
+  }
+  render () {
+    return (
+                <div>
+                    <Slider ref="red" update={this.update} />
+                    <label>{this.state.red}</label>
+                    <Slider ref="green" update={this.update} />
+                    <label>{this.state.green}</label>
+                    <Slider ref="blue" update={this.update} />
+                    <label>{this.state.blue}</label>
+                </div>
+        )
+  }
+}
+
+
+class Slider extends React.Component {
+  render () {
+    return (
+                    <div>
+                        <input
+                            ref="range"
+                            type="range"
+                            min="0"
+                            max="255"
+                            onChange={this.props.update} />
+                    </div>
+        )
+  }
+}
+
+ReactDOM.render (
+        <APP />,
+        document.body)
+</script>
+</body>
+</html>
