@@ -22,7 +22,7 @@ Just clone the repo, install superstatic (Superstatic is an enhanced static web 
     $ npm install -g superstatic
     $ cd 01 - React Fundamentals - Hello World - First Component
     $ superstatic
-    Then open http://localhost:8080/ in your browser.
+    Then open http://localhost:3474 in your browser.
 ```
 ### Questions, Comments, Suggestions?
 Open an [Issue](https://github.com/React-ua/react-cours-es6/issues)
