@@ -5,8 +5,12 @@
 In this series we are going to explore the usage of React with ECMAScript6 and explore the basic fundamentals of React to get you started.
 
 You could find links to all parts of series below:
-- [01 - React Fundamentals - Hello World - First Component](https://github.com/React-ua/react-cours-es6/01 - React Fundamentals - Hello World - First Component)
-- [02 - React Fundamentals - The Render Method](https://github.com/React-ua/react-cours-es6/02 - React Fundamentals - The Render Method)
+- [01 - React Fundamentals - Hello World - First Component](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20React%20Fundamentals%20-%20Hello%20World%20-%20First%20Component)
+- [02 - React Fundamentals - The Render Method](https://github.com/React-ua/react-cours-es6/tree/master/02%20-%20React%20Fundamentals%20-%20The%20Render%20Method)
+- [03 - React Fundamentals - Introduction to Properties](https://github.com/React-ua/react-cours-es6/tree/master/03%20-%20React%20Fundamentals%20-%20Introduction%20to%20Properties)
+- [04 - React Fundamentals - State Basics](https://github.com/React-ua/react-cours-es6/tree/master/04%20-%20React%20Fundamentals%20-%20State%20Basics)
+- [05 - React Fundamentals - Owner Ownee Relationship](https://github.com/React-ua/react-cours-es6/tree/master/05%20-%20React%20Fundamentals%20-%20Owner%20Ownee%20Relationship)
+-[06 - React Fundamentals - Using Refs to Access Components](https://github.com/React-ua/react-cours-es6/tree/master/06%20-%20React%20Fundamentals%20-%20Using%20Refs%20to%20Access%20Components)
 
 # Features
     ✓ Fundamentals concepts of React
