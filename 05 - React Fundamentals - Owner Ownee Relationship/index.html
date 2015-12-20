@@ -8,6 +8,9 @@
     <script src="../vendor/browser.min.js"></script>
 </head>
 <body>
+  <div id="container">
+    <!-- This element's contents will be replaced with your component. -->
+  </div>
 <script type="text/babel">
 
 class APP extends React.Component {
@@ -46,7 +49,7 @@ class Widget extends React.Component {
 
     ReactDOM.render(
         <APP />,
-        document.body)
+        document.getElementById('container'))
 </script>
 </body>
 </html>

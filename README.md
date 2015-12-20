@@ -10,7 +10,8 @@ You could find links to all parts of series below:
 - [03 - React Fundamentals - Introduction to Properties](https://github.com/React-ua/react-cours-es6/tree/master/03%20-%20React%20Fundamentals%20-%20Introduction%20to%20Properties)
 - [04 - React Fundamentals - State Basics](https://github.com/React-ua/react-cours-es6/tree/master/04%20-%20React%20Fundamentals%20-%20State%20Basics)
 - [05 - React Fundamentals - Owner Ownee Relationship](https://github.com/React-ua/react-cours-es6/tree/master/05%20-%20React%20Fundamentals%20-%20Owner%20Ownee%20Relationship)
--[06 - React Fundamentals - Using Refs to Access Components](https://github.com/React-ua/react-cours-es6/tree/master/06%20-%20React%20Fundamentals%20-%20Using%20Refs%20to%20Access%20Components)
+- [06 - React Fundamentals - Using Refs to Access Components](https://github.com/React-ua/react-cours-es6/tree/master/06%20-%20React%20Fundamentals%20-%20Using%20Refs%20to%20Access%20Components)
+- [07 - React Fundamentals - Accessing Child Properties](https://github.com/React-ua/react-cours-es6/tree/master/07%20-%20React%20Fundamentals%20-%20Accessing%20Child%20Properties)
 
 # Features
     ✓ Fundamentals concepts of React
