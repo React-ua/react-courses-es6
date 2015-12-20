@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Lifecycle: Mounting</title>
+    <script src="../vendor/ReactWithAddons.js"></script>
+    <script src="../vendor/ReactDOM.js"></script>
+    <script src="../vendor/browser.min.js"></script>
+    <style>
+    body {
+        margin: 25px;
+    }
+    </style>
+</head>
+<body>
+<button onClick="render()">Render</button>
+<button onClick="unmount()">Unmount</button>
+<hr />
+<div id="panel"></div>
+<script type="text/babel">
+
+class APP extends React.Component {
+  constructor(props){
+    super(props);
+    this.update= this.update.bind(this);
+  }
+  render () {
+    console.log("hello world")
+    return <button onClick={this.update}>{this.props.val}</button>
+  }
+  update(){
+  propValue++
+  render()
+  }
+  componentWillMount() {
+    console.log("here i go")
+  }
+  componentDidMount() {
+      console.log("nice place you got here")
+  }
+  componentWillUnmount() {
+      console.log("goodbye cruel world!")
+  }
+}
+
+let propValue= 0
+window.render = function(){
+            ReactDOM.render(
+                <APP val={propValue} />,
+                document.getElementById('panel'))
+}
+window.unmount = function(){
+            ReactDOM.unmountComponentAtNode(document.getElementById('panel'))
+        }
+
+
+</script>
+</body>
+</html>
