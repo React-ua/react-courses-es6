@@ -37,7 +37,7 @@ class APP extends React.Component {
 
 class BButton extends React.Component {
   render () {
-var {className, ...other}= { ...this.props }
+var {className, ...other}= this.props
 
     return (<a className={ `btn ${className}`} {...other}>{this.props.children}</a>)
   }
@@ -46,7 +46,7 @@ var {className, ...other}= { ...this.props }
 class BIcon extends React.Component {
 
   render () {
-    var {className}= { ...this.props }
+    var {className}= this.props
     return (<span  className={ `glyphicon ${className}`}>  </span>)
   }
 }
