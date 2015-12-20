@@ -13,6 +13,8 @@ You could find links to all parts of series below:
 - [06 - React Fundamentals - Using Refs to Access Components](https://github.com/React-ua/react-cours-es6/tree/master/06%20-%20React%20Fundamentals%20-%20Using%20Refs%20to%20Access%20Components)
 - [07 - React Fundamentals - Accessing Child Properties](https://github.com/React-ua/react-cours-es6/tree/master/07%20-%20React%20Fundamentals%20-%20Accessing%20Child%20Properties)
 - [08 - React Fundamentals - transferPropsTo](https://github.com/React-ua/react-cours-es6/tree/master/08%20-%20React%20Fundamentals%20-%20transferPropsTo)
+- [09 - React Fundamentals - Component Lifecycle - Mounting Basics](https://github.com/React-ua/react-cours-es6/tree/master/09%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Mounting Basics)
+- [10 - React Fundamentals - Component Lifecycle - Mounting Usage](https://github.com/React-ua/react-cours-es6/tree/master/10%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Mounting%20Usage)
 
 # Features
     ✓ Fundamentals concepts of React
