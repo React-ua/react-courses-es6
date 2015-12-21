@@ -1,68 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Component Lifecycle: Mounting Uses</title>
-    <script src="../vendor/ReactWithAddons.js"></script>
-    <script src="../vendor/ReactDOM.js"></script>
-    <script src="../vendor/browser.min.js"></script>
-    <style>
-    body {
-        margin: 25px;
-    }
-    </style>
+  <meta charset="UTF-8">
+  <title>Component Lifecycle: Mounting Uses</title>
+  <script src="../vendor/ReactWithAddons.js"></script>
+  <script src="../vendor/ReactDOM.js"></script>
+  <script src="../vendor/browser.min.js"></script>
+  <style>
+  body {
+    margin: 25px;
+  }
+  button {
+    padding : 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: 	#ff9999;
+    font-size : 20px
+  }
+  </style>
 </head>
 <body>
-<button onClick="render()">Render</button>
-<button onClick="unmount()">Unmount</button>
-<hr />
-<div id="panel"></div>
-<script type="text/babel">
+  <button onClick="render()">Render</button>
+  <button onClick="unmount()">Unmount</button>
+  <hr />
+  <div id="panel"></div>
+  <script type="text/babel">
 
-class APP extends React.Component {
-  constructor(props){
-    super(props);
-    this.state= {m:0};
-    this.update= this.update.bind(this);
-  }
-  render () {
-    console.log("hello world")
-    return ( <button
-                        style={this.btnStyle}
-                        onClick={this.update}>
-                        {this.props.val*this.state.m}
-                    </button>)
-  }
-  update(){
-  propValue++
-  render()
-  }
-  componentWillMount() {
-    this.setState({m:2});
-    if(this.props.val===0){
-        this.btnStyle = {'color':'red'}
+  class APP extends React.Component {
+    constructor(props){
+      super(props);
+      this.state= {m:0};
+      this.update= this.update.bind(this);
     }
-    console.log("here i go")
-  }
-  componentDidMount() {
-      console.log("nice place you got here")
-        this.inc = setInterval(this.update,500)
-  }
-  componentWillUnmount() {
-      clearInterval(this.inc)
-      console.log("goodbye cruel world!")
-  }
-}
-
-let propValue= 0
-window.render = function(){
-            ReactDOM.render(
-                <APP val={propValue} />,
-                document.getElementById('panel'))
-}
-window.unmount = function(){
-            ReactDOM.unmountComponentAtNode(document.getElementById('panel'))
+    render () {
+      console.log("hello world")
+      return ( <button
+        style={this.btnStyle}
+        onClick={this.update}>
+        {this.props.val*this.state.m}
+        </button>)
+      }
+      update(){
+        propValue++
+        render()
+      }
+      componentWillMount() {
+        this.setState({m:2});
+        if(this.props.val===0){
+          this.btnStyle = {'color':'red'}
         }
-</script>
-</body>
-</html>
+        console.log("here i go")
+      }
+      componentDidMount() {
+        console.log("nice place you got here")
+        this.inc = setInterval(this.update,500)
+      }
+      componentWillUnmount() {
+        clearInterval(this.inc)
+        console.log("goodbye cruel world!")
+      }
+    }
+
+    let propValue= 0
+    window.render = function(){
+      ReactDOM.render(
+        <APP val={propValue} />,
+        document.getElementById('panel'))
+      }
+      window.unmount = function(){
+        ReactDOM.unmountComponentAtNode(document.getElementById('panel'))
+      }
+      </script>
+    </body>
+    </html>

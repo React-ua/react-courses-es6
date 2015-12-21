@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Lifecycle: Updating</title>
+    <script src="../vendor/ReactWithAddons.js"></script>
+    <script src="../vendor/ReactDOM.js"></script>
+    <script src="../vendor/browser.min.js"></script>
+    <style>
+    body {
+        margin: 25px;
+    }
+    </style>
+</head>
+<body>
+<div id="panel"></div>
+<script type="text/babel">
+
+class APP extends React.Component {
+  constructor(props){
+    super(props);
+    this.state= {
+      increasing:false
+    };
+    this.update = this.update.bind(this);
+  }
+  update () {
+      newVal ++;
+      render();
+  }
+  componentWillReceiveProps (nextProps) {
+      this.setState({increasing:nextProps.val>this.props.val})
+  }
+  shouldComponentUpdate (nextProps, nextState) {
+    return nextProps.val % 5 ===0;
+  }
+  componentWillUpdate (nextProps, nextState) {
+    console.log("nextProps ===" + JSON.stringify(nextProps))
+    console.log("nextState ===" + JSON.stringify(nextState))
+  }
+
+
+  render () {
+    console.log(this.state.increasing)
+    return  (
+                    <button
+                        onClick={this.update}>
+                        {this.props.val}
+                    </button>
+                    )
+  }
+
+  componentDidUpdate (prevProps, prevState) {
+    console.log("prevProps ===" + JSON.stringify(prevProps))
+    console.log("prevState ===" + JSON.stringify(prevState))
+
+  }
+}
+let newVal = 0;
+ReactDOM.render(
+  <APP val={newVal} />,
+  document.getElementById('panel'))
+window.render = function(){
+  ReactDOM.render(
+       <APP val={newVal} />,
+       document.getElementById('panel'))
+     }
+</script>
+</body>
+</html>

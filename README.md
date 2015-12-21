@@ -15,6 +15,7 @@ You could find links to all parts of series below:
 - [08 - React Fundamentals - transferPropsTo](https://github.com/React-ua/react-cours-es6/tree/master/08%20-%20React%20Fundamentals%20-%20transferPropsTo)
 - [09 - React Fundamentals - Component Lifecycle - Mounting Basics](https://github.com/React-ua/react-cours-es6/tree/master/09%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Mounting Basics)
 - [10 - React Fundamentals - Component Lifecycle - Mounting Usage](https://github.com/React-ua/react-cours-es6/tree/master/10%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Mounting%20Usage)
+- [11 - React Fundamentals - Component Lifecycle - Updating](https://github.com/React-ua/react-cours-es6/tree/master/11%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Updating)
 
 # Features
     ✓ Fundamentals concepts of React
@@ -36,6 +37,7 @@ Just clone the repo, install superstatic (Superstatic is an enhanced static web 
 Open an [Issue](https://github.com/React-ua/react-cours-es6/issues)
 ### Credits & Sources
 - [egghead.io](https://egghead.io/series/react-fundamentals)
+- [buildwithreact](http://buildwithreact.com/)
 
 ### Other  Tutorials & Resources
 
