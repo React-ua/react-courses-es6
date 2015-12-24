@@ -22,6 +22,7 @@ You could find links to all parts of series below:
     ✓ Fundamentals concepts of React
     ✓ ES6 with Babel
     ✓ Component Class Syntax
+    ✓ Load any module format (ES6, AMD, CommonJS and globals) with JSPM
 
 # Getting Started
 

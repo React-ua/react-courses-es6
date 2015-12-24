@@ -1,8 +1,23 @@
 {
   "name": "react-courses-es6",
   "version": "1.0.0",
-  "description": "Using ES6+ features to write  React components",
-  "main": "index.js",
-  "author": "Mohamed JEBLI",
-  "license": "MIT"
+  "description": "Using ES6+ features to write  React components and  JSPM to load JavaScript modules in different formats",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeblister <jelister@gmail.com>",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "jsx": "npm:jspm-loader-jsx@^0.0.7",
+      "react": "npm:react@^0.14.3",
+      "react-dom": "npm:react-dom@^0.14.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
