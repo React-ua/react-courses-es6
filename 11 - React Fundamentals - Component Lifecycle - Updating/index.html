@@ -22,12 +22,11 @@ class APP extends React.Component {
     this.state= {
       increasing:false
     };
-    this.update = this.update.bind(this);
-  }
-  update () {
+    this.handleClick = () =>  {
       newVal ++;
       render();
-  }
+  };
+}
   componentWillReceiveProps (nextProps) {
       this.setState({increasing:nextProps.val>this.props.val})
   }
@@ -44,7 +43,7 @@ class APP extends React.Component {
     console.log(this.state.increasing)
     return  (
                     <button
-                        onClick={this.update}>
+                        onClick={this.handleClick}>
                         {this.props.val}
                     </button>
                     )
