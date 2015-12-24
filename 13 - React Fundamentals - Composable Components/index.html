@@ -1,85 +1,87 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Composable</title>
-    <script src="http://fb.me/react-0.9.0.js"></script>
-  <script src="http://fb.me/JSXTransformer-0.9.0.js"></script>
+  <meta charset="UTF-8">
+  <title>Composable</title>
+  <script src="../vendor/ReactWithAddons.js"></script>
+  <script src="../vendor/ReactDOM.js"></script>
+  <script src="../vendor/browser.min.js"></script>
 </head>
 <body>
-<script type="text/jsx">
-    /** @jsx React.DOM */
-    var APP = React.createClass({
-        getInitialState:function(){
-            return {
-                red:0
-            }
-        },
-        update:function(){
-            this.setState({
-                red:this.refs.red.refs.range.getDOMNode().value
-            })
-        },
-        render:function(){
-            return (
-                        <div>
-                            <NumInput
-                                 ref="red"
-                                 min={0}
-                                 max={255}
-                                 step={0.01}
-                                 val={+this.state.red}
-                                 update={this.update} 
-                                 label="Red"
-                                 type="number"
-                             />
-                        </div>
-                )
-        }
-    });
+  <div id="container">
+  </div>
+  <script type="text/babel">
+  class APP extends React.Component{
+    constructor(props){
+    super(props);
+    this.state = {
+      red: 0
+    };
+    this.update= () =>{
+      this.setState({
+        red:this.refs.red.refs.range.value
+      })
+    }
+    }
+    render () {
+      return (
+        <div>
+        <NumInput
+        ref="red"
+        min={0}
+        max={255}
+        step={1}
+        val={+this.state.red}
+        update={this.update}
+        label="Red"
+        type="range"
+        />
+        </div>)
+    }
+  }
 
-    var NumInput = React.createClass({
-        propTypes: {
-            min:React.PropTypes.number,
-            max:React.PropTypes.number,
-            step:React.PropTypes.number,
-            val:React.PropTypes.number,
-            label:React.PropTypes.string,
-            update:React.PropTypes.func.isRequired,
-            type:React.PropTypes.oneOf(['number','range'])
-        },
-        getDefaultProps:function(){
-            return {
-                min:null,
-                max:null,
-                val:0,
-                step:1,
-                label:'',
-                type:'range'
-            }
-        },
-        render:function(){
-            var label = this.props.label!=='' ?
-                <label>{this.props.label} : {this.props.val}</label> : ''
-            return (
-                            <div>
-                                <input 
-                                    ref="range"
-                                    type={this.props.type}
-                                    min={this.props.min}
-                                    max={this.props.max}
-                                    step={this.props.step}
-                                    defaultValue={this.props.val}
-                                    onChange={this.props.update} />
-                                    {label}
-                            </div>
-                )
-        }
-    })
+  class NumInput extends React.Component{
+    constructor(props){
+    super(props);
+    }
+    render () {
+      var label = this.props.label!=='' ? <label>{this.props.label} : {this.props.val}</label> : ''
+      return (
+        <div>
+        <input
+        ref="range"
+        type={this.props.type}
+        min={this.props.min}
+        max={this.props.max}
+        step={this.props.step}
+        defaultValue={this.props.val}
+        onChange={this.props.update} />
+        {label}
+        </div>
+      )
+    }
+  }
 
-    React.renderComponent(
-        <APP />,
-        document.body)
-</script>
-</body>
-</html>
+  NumInput.propTypes = {
+    min:React.PropTypes.number,
+    max:React.PropTypes.number,
+    step:React.PropTypes.number,
+    val:React.PropTypes.number,
+    label:React.PropTypes.string,
+    update:React.PropTypes.func.isRequired,
+    type:React.PropTypes.oneOf(['number','range'])
+  };
+  NumInput.defaultProps = {
+    min:null,
+    max:null,
+    val:0,
+    step:1,
+    label:'',
+    type:'range'
+  };
+  ReactDOM.render(
+    <APP />,
+    document.getElementById('container'))
+    </script>
+  </body>
+  </html>
