@@ -23,10 +23,8 @@ You could find demos to all parts with the Workflow with JSPM modules budler bel
 To quote the JSPM site itself, JSPM is “Frictionless browser package management” – basically it allows us to manage our front-end dependencies.
 - [01 - Jspm with react - example](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20Jspm%20with%20react%20-%20example)
 - [01 - Jspm with react - example](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20Jspm%20with%20react%20-%20example)
-- [02 - Jspm with react - Dynamically Generated Components](https://github.com/React-ua/react-cours-es6/tree/master/02%20-%20Jspm%20with%20react%20-%20Dynamically%20Generated%20Components)
 - [02 - Jspm with react - Dynamically Generated Components](https://github.com/React-ua/react-cours-es6/tree/master/02 - Jspm with react - Dynamically Generated Components)
-
-
+- [03 - Jspm with react - Mixins](https://github.com/React-ua/react-cours-es6/tree/master/03 - Jspm with react - Mixins)
 
 # Features
     ✓ Fundamentals concepts of React
@@ -50,7 +48,7 @@ Open an [Issue](https://github.com/React-ua/react-cours-es6/issues)
 ### Credits & Sources
 - [egghead.io](https://egghead.io/series/react-fundamentals)
 - [buildwithreact](http://buildwithreact.com/)
-
+- [egorsmirnov.me](http://egorsmirnov.me/2015/09/30/react-and-es6-part4.html)
 ### Other  Tutorials & Resources
 
 
