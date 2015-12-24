@@ -17,6 +17,16 @@ You could find links to all parts of series below:
 - [10 - React Fundamentals - Component Lifecycle - Mounting Usage](https://github.com/React-ua/react-cours-es6/tree/master/10%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Mounting%20Usage)
 - [11 - React Fundamentals - Component Lifecycle - Updating](https://github.com/React-ua/react-cours-es6/tree/master/11%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Updating)
 - [13 - React Fundamentals - Composable Components](https://github.com/React-ua/react-cours-es6/tree/master/13%20-%20React%20Fundamentals%20-%20Composable%20Components)
+# React with JSPM
+You could find demos to all parts with the Workflow with JSPM modules budler below:
+## What is JSPM?
+To quote the JSPM site itself, JSPM is “Frictionless browser package management” – basically it allows us to manage our front-end dependencies.
+- [01 - Jspm with react - example](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20Jspm%20with%20react%20-%20example)
+- [01 - Jspm with react - example](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20Jspm%20with%20react%20-%20example)
+- [02 - Jspm with react - Dynamically Generated Components](https://github.com/React-ua/react-cours-es6/tree/master/02%20-%20Jspm%20with%20react%20-%20Dynamically%20Generated%20Components)
+- [02 - Jspm with react - Dynamically Generated Components](https://github.com/React-ua/react-cours-es6/tree/master/02 - Jspm with react - Dynamically Generated Components)
+
+
 
 # Features
     ✓ Fundamentals concepts of React
