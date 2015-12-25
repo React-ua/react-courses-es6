@@ -18,7 +18,8 @@ You could find links to all parts of series below:
 - [11 - React Fundamentals - Component Lifecycle - Updating](https://github.com/React-ua/react-cours-es6/tree/master/11%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Updating)
 - [13 - React Fundamentals - Composable Components](https://github.com/React-ua/react-cours-es6/tree/master/13%20-%20React%20Fundamentals%20-%20Composable%20Components)
 - [14 - React Fundamentals - Build a babel In-browser Live transformer](https://github.com/React-ua/react-cours-es6/tree/master/14 - React Fundamentals - Build a babel In-browser Live transformer)
-- [15 - React Fundamentals - JSX Deep Dive](https://github.com/React-ua/react-cours-es6/tree/master/15 - React Fundamentals - JSX Deep Dive)
+- [15 - React Fundamentals - JSX Deep Dive](16 - Managing state and form fields with React15 - React Fundamentals - JSX Deep Dive)
+- [16 - Managing state and form fields with React](16 - Managing state and form fields with React16 - Managing state and form fields with React)
 # React with JSPM
 You could find demos to all parts with the Workflow with JSPM modules budler below:
 ## What is JSPM?
@@ -55,7 +56,7 @@ Open an [Issue](https://github.com/React-ua/react-cours-es6/issues)
 - [buildwithreact](http://buildwithreact.com/)
 - [egorsmirnov.me](http://egorsmirnov.me/2015/09/30/react-and-es6-part4.html)
 ### Other  Tutorials & Resources
-
+- [Managing state and controlled form fields with React](http://blog.iansinnott.com/managing-state-and-controlled-form-fields-with-react/)
 
 ### New to React? Check out these tutorials
 

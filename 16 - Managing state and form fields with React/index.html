@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>react-with-addons ReactLink</title>
+  <script src="../vendor/ReactWithAddons.js"></script>
+  <script src="../vendor/ReactDOM.js"></script>
+  <script src="../vendor/browser.min.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+
+  class APP extends React.Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        name:'',
+        email:'',
+        phone:''
+      };
+      this.makeValueLink = (key) =>{
+        let self= this;
+        return {
+          value: self.state[key],
+          requestChange: function(newValue) {
+            let newState = {};
+            newState[key] = newValue;
+            self.setState(newState);
+          }
+        }
+      };
+    }
+    render () {
+
+      return (
+        <form>
+        <div>
+        <input valueLink={this.makeValueLink('name')} type="text" placeholder="Name" />
+        <label>*{this.state.name}*</label>
+        </div>
+        <div>
+        <input valueLink={this.makeValueLink('email')} type="text" placeholder="Email" />
+        <label>*{this.state.email}*</label>
+        </div>
+        <div>
+        <input valueLink={this.makeValueLink('phone')} type="text" placeholder="Phone" />
+        <label>*{this.state.phone}*</label>
+        </div>
+        </form>
+      )
+    }
+  }
+
+  ReactDOM.render(
+    <APP />,
+    document.getElementById('app'))
+    </script>
+  </body>
+  </html>
