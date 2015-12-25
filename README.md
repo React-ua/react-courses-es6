@@ -18,6 +18,7 @@ You could find links to all parts of series below:
 - [11 - React Fundamentals - Component Lifecycle - Updating](https://github.com/React-ua/react-cours-es6/tree/master/11%20-%20React%20Fundamentals%20-%20Component%20Lifecycle%20-%20Updating)
 - [13 - React Fundamentals - Composable Components](https://github.com/React-ua/react-cours-es6/tree/master/13%20-%20React%20Fundamentals%20-%20Composable%20Components)
 - [14 - React Fundamentals - Build a babel In-browser Live transformer](https://github.com/React-ua/react-cours-es6/tree/master/14 - React Fundamentals - Build a babel In-browser Live transformer)
+- [15 - React Fundamentals - JSX Deep Dive](https://github.com/React-ua/react-cours-es6/tree/master/15 - React Fundamentals - JSX Deep Dive)
 # React with JSPM
 You could find demos to all parts with the Workflow with JSPM modules budler below:
 ## What is JSPM?
@@ -32,7 +33,9 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
     ✓ ES6 with Babel
     ✓ Component Class Syntax
     ✓ Load any module format (ES6, AMD, CommonJS and globals) with JSPM
-    ✓ Babel in-browser transform for testing and playing.
+    ✓ Babel in-browser transform for testing and playing
+    ✓ Writing markup in JavaScript (JSX)
+
 
 # Getting Started
 
