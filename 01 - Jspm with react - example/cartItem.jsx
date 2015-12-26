@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CartIte extends React.Component {
+export default class CartItem extends React.Component {
 
     static propTypes = {
         title: React.PropTypes.string.isRequired,

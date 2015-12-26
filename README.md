@@ -29,6 +29,7 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
 - [01 - Jspm with react - example](https://github.com/React-ua/react-cours-es6/tree/master/01%20-%20Jspm%20with%20react%20-%20example)
 - [02 - Jspm with react - Dynamically Generated Components](https://github.com/React-ua/react-cours-es6/tree/master/02 - Jspm with react - Dynamically Generated Components)
 - [03 - Jspm with react - Mixins](https://github.com/React-ua/react-cours-es6/tree/master/03 - Jspm with react - Mixins)
+- [04 - Jspm with React  - Simple Router](https://github.com/React-ua/react-cours-es6/tree/master/04 - Jspm with React  - Simple Router)
 
 # Features
     ✓ Fundamentals concepts of React
