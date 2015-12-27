@@ -31,6 +31,8 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
 - [03 - Jspm with react - Mixins](https://github.com/React-ua/react-cours-es6/tree/master/03 - Jspm with react - Mixins)
 - [04 - Jspm with React  - Simple Router](https://github.com/React-ua/react-cours-es6/tree/master/04 - Jspm with React  - Simple Router)
 - [05 - React Flux - Development Environment Setup with Jspm](https://github.com/React-ua/react-cours-es6/tree/master/05 - React Flux - Development Environment Setup with Jspm)
+- [06 - React mobservable - example](https://github.com/React-ua/react-cours-es6/tree/master/06 - React mobservable - example)
+- [07 - React mobservable - full app](https://github.com/React-ua/react-cours-es6/tree/master/07 - React mobservable - full app)
 
 # Features
     ✓ Fundamentals concepts of React
@@ -39,6 +41,8 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
     ✓ Load any module format (ES6, AMD, CommonJS and globals) with JSPM
     ✓ Babel in-browser transform for testing and playing
     ✓ Writing markup in JavaScript (JSX)
+    ✓ mobservable for easy state management powered by ES6
+
 
 
 # Getting Started
