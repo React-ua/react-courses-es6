@@ -33,6 +33,7 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
 - [05 - React Flux - Development Environment Setup with Jspm](https://github.com/React-ua/react-cours-es6/tree/master/05 - React Flux - Development Environment Setup with Jspm)
 - [06 - React mobservable - example](https://github.com/React-ua/react-cours-es6/tree/master/06 - React mobservable - example)
 - [07 - React mobservable - full app](https://github.com/React-ua/react-cours-es6/tree/master/07 - React mobservable - full app)
+- [08 - React mobservable - observable](https://github.com/React-ua/react-cours-es6/tree/master/08 - React mobservable - observable)
 
 # Features
     ✓ Fundamentals concepts of React
