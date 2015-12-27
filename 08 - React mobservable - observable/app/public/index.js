@@ -1,23 +1,17 @@
-import {mobservable, observable, observe} from 'mobservable';
+import {observable, observe} from 'mobservable';
+// observable accepts a value and returns a getter / setter function that holds this value
+const cityName = observable("Vienna");
 
-var person = observable({
-    name: "John",
-    age: 42,
-    showAge: false,
-    labelText: function() {
-        return (this.showAge ? `${this.name} (age: ${this.age})` : this.name);
-    }
+// The returned function can be invoked without arguments to get the currently stored value
+console.log(cityName());
+// prints 'Vienna'
+
+
+// Registers an observer function that will fire each time the stored value is replaced.
+cityName.observe(function(newCity, oldCity) {
+  console.log(oldCity, "->", newCity);
 });
-
-console.log(person.labelText);
-//  prints: John (age: 42)
-
-// object properties don't expose an 'observe' method,
-// but don't worry, 'mobservable.observe' is even more powerful
-mobservable.observe(() => console.log(person.labelText));
-
-person.name = "Dave";
-// prints: Dave (age: 42)
-
-person.age = 21;
-// prints: Dave (age: 21)
+// observable can be invoked with one argument to update the currently stored value.
+// Replaces the currently stored value. Notifies all observers.
+cityName("Amsterdam");
+// prints 'Vienna -> Amsterdam'
