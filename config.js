@@ -22,6 +22,7 @@ System.config({
     "jsx": "npm:jspm-loader-jsx@0.0.7",
     "mobservable": "npm:mobservable@1.1.8",
     "mobservable-react": "npm:mobservable-react@2.1.1",
+    "mobservable-react-devtools": "npm:mobservable-react-devtools@2.0.5",
     "react": "npm:react@0.14.3",
     "react-dom": "npm:react-dom@0.14.3",
     "react-intl": "npm:react-intl@1.2.2",
@@ -155,6 +156,11 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:mobservable-react-devtools@2.0.5": {
+      "mobservable": "npm:mobservable@1.1.8",
+      "mobservable-react": "npm:mobservable-react@2.1.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:mobservable-react@2.1.1": {
       "mobservable": "npm:mobservable@1.1.8",

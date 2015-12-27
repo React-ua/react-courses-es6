@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+</head>
+<body>
+<div id="app" class="container"></div>
+<script src="../jspm_packages/system.js"></script>
+<script src="../config.js"></script>
+<script>
+System.trace = true;
+System.import('./app/index')
+.then(function () {
+  console.log('ran at ', new Date())
+})
+.catch(console.error.bind(console))
+</script>
+</body>
+</html>
