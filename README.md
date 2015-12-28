@@ -36,6 +36,9 @@ To quote the JSPM site itself, JSPM is “Frictionless browser package managemen
 - [08 - React mobservable - observable](https://github.com/React-ua/react-cours-es6/tree/master/08 - React mobservable - observable)
 - [09- React mobservable - observer](https://github.com/React-ua/react-cours-es6/tree/master/09- React mobservable - observer)
 - [10- React mobservable - observe](https://github.com/React-ua/react-cours-es6/tree/master/10- React mobservable - observe)
+- [11- React mobservable - transaction](https://github.com/React-ua/react-cours-es6/tree/master/11- React mobservable - transaction)
+[12- React mobservable - todomvc](https://github.com/React-ua/react-cours-es6/tree/master/12- React mobservable - todomvc)
+
 # Features
     ✓ Fundamentals concepts of React
     ✓ ES6 with Babel

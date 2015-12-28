@@ -1,9 +1,10 @@
-import {observable, observe} from 'mobservable'
+import {observable, observe, toJSON} from 'mobservable'
 const person = observable({
     firstName: "Maarten",
     lastName: "Luther"
 });
-
+console.log(person);
+console.log(toJSON(person));
 const disposer = observe(person, (change) => {
     console.log(change.type, change.name, "from", change.oldValue, "to", change.object[change.name]);
 });
