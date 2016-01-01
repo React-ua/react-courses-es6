@@ -20,7 +20,8 @@ export default class TodoFooter extends React.Component {
 				<ul className="filters">
 						{this.renderFilterLink(ViewModel.ALL_TODOS, "", "All")}
 						{this.renderFilterLink(ViewModel.ACTIVE_TODOS, "active", "Active")}
-						{this.renderFilterLink(ViewModel.COMPLETED_TODOS, "completed", "Completed")}
+						{this.renderFilterLink(ViewModel.LAST_TODOS, "last", "Last")}
+						{this.renderFilterLink(ViewModel.COMPLETED_TODOS, "completed", "completed")}
 				</ul>
 				{ todoModel.completedCount === 0
 					? null

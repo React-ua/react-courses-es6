@@ -25,11 +25,14 @@ export default class TodoApp extends React.Component {
 
 	componentDidMount() {
 		var viewModel = this.props.viewModel;
+		//  Assign routes to an object literal.
 		var router = Router({
 			'/': function() { viewModel.todoFilter = ViewModel.ALL_TODOS; },
 			'/active': function() { viewModel.todoFilter = ViewModel.ACTIVE_TODOS; },
-			'/completed': function() { viewModel.todoFilter = ViewModel.COMPLETED_TODOS; }
+			'/completed': function() { viewModel.todoFilter = ViewModel.COMPLETED_TODOS; },
+			'/last': [function() { console.log("Hello new");}, function() { viewModel.todoFilter = ViewModel.LAST_TODOS; }]
 		});
+		 // Instantiate the router.
 		router.init('/');
 	}
 }

@@ -30,12 +30,17 @@ export default class TodoOverview extends React.Component {
 	}
 
 	getVisibleTodos() {
-		return this.props.todoModel.todos.filter(todo => {
+		let todos = this.props.todoModel.todos
+		let last = todos[todos.length -1]
+
+		return todos.filter(todo => {
 			switch (this.props.viewModel.todoFilter) {
 				case ViewModel.ACTIVE_TODOS:
 					return !todo.completed;
 				case ViewModel.COMPLETED_TODOS:
 					return todo.completed;
+				case ViewModel.LAST_TODOS:
+					return todo == last;
 				default:
 					return true;
 			}

@@ -3,7 +3,7 @@ import * as Utils from '../utils';
 
 export class TodoModel {
 	constructor(key) {
-		extendObservable(this, {
+		extendObservable(this,{
 			key,
 			todos: [],
 			activeTodoCount: () =>
@@ -51,7 +51,7 @@ export class TodoModel {
 export class Todo {
 	constructor(store, id, title, completed) {
 		this.store = store;
-		extendObservable(this, { id, title, completed });
+		extendObservable(this,{ id, title, completed });
 	}
 
 	toggle() {
