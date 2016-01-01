@@ -17,11 +17,21 @@ class APP extends React.Component{
 	}
 	componentWillMount (){
 	//	Using reqwest
+
+	const fields = [{
+    name: "val",
+    type: "Number",
+    min: 1,
+    max: 30,
+    decimals: 0
+}];
+const url = 'http://www.mockaroo.com/api/generate.json?count=5&key=1977f1b0' + '&fields=' + encodeURIComponent(JSON.stringify(fields));
 			reqwest({
-				url: 'http://filltext.com/?rows=5&val={randomNumber}',
+				url: url, //'http://filltext.com/?rows=5&val={randomNumber}',
 				type: 'jsonp', // JSONP (or JSON with Padding) to overcome the cross-domain restrictions imposed by browsers.
 				 crossOrigin: true,
 			success:function(resp){
+				console.log(resp);
 				this.setState({data:resp})
 				this.renderChart(this.state.data)
 			}.bind(this)
